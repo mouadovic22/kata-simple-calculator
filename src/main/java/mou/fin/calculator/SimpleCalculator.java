@@ -15,7 +15,7 @@ public class SimpleCalculator {
             return 0;
         }
 
-        String[] parts = input.trim().split("[+\\-*\\/%]");
+        String[] parts = input.trim().split("[+\\-*/%]");
         if (parts.length == 1) {
             return parseOperand(parts[0]);
         } else if (parts.length != 2) {
