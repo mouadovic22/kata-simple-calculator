@@ -6,7 +6,7 @@ import java.util.List;
 public class SimpleCalculator {
     List<Operation> operations;
 
-    public SimpleCalculator(List<Operation> operations) {
+    public SimpleCalculator() {
         this.operations = Arrays.asList(new Addition(), new Subtraction(), new Multiplication());
     }
 

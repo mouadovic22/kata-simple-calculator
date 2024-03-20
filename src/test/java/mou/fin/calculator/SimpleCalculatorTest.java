@@ -12,8 +12,7 @@ public class SimpleCalculatorTest {
     private final SimpleCalculator simpleCalculator;
 
     public SimpleCalculatorTest() {
-        List<Operation> operations = Arrays.asList(new Addition(), new Subtraction(), new Multiplication(), new Addition());
-        simpleCalculator = new SimpleCalculator(operations);
+        simpleCalculator = new SimpleCalculator();
     }
 
     @Test

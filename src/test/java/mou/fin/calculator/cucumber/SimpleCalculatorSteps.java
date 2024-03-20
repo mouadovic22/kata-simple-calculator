@@ -3,10 +3,8 @@ package mou.fin.calculator.cucumber;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import mou.fin.calculator.*;
+import mou.fin.calculator.SimpleCalculator;
 
-import java.util.Arrays;
-import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 public class SimpleCalculatorSteps {
     private SimpleCalculator simpleCalculator;
@@ -15,8 +13,7 @@ public class SimpleCalculatorSteps {
 
     @Given("I have a simple calculator")
     public void i_have_a_simple_calculator() {
-        List<Operation> operations = Arrays.asList(new Addition(), new Subtraction(), new Multiplication());
-        simpleCalculator = new SimpleCalculator(operations);
+        simpleCalculator = new SimpleCalculator();
     }
 
     @When("I input {string}")
